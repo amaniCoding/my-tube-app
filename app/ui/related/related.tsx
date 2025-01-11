@@ -8,7 +8,7 @@ export default function Related() {
         Array.from(Array(10).keys()).map((_, i) => {
           return (
 
-            <div className="grid grid-cols-12 gap-5 mb-5">
+            <div className="grid grid-cols-12 gap-5 mb-5" key={i}>
               <div className="md:col-span-5 col-span-12">
               <Image
                     src={`/latest/${i + 1}.jpg`}
