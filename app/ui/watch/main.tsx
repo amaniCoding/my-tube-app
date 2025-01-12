@@ -8,14 +8,14 @@ import { PiThumbsDownLight, PiThumbsUpLight } from "react-icons/pi"
 export default function Watch() {
   return (
     <section>
-      <div className="max-w-[1100px] mx-auto mt-3">
+      <div className="max-w-[1100px] mx-auto md:p-2 p-3">
 
         <div className="grid grid-cols-12 gap-10">
           <div className="md:col-span-7 col-span-12">
           <div>
             <div className="p-1">
               <Image
-                src={`/latest/2.jpg`}
+                src={`/latest/4.jpg`}
                 width={0}
                 height={0}
                 sizes="100vh"

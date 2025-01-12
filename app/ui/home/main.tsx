@@ -9,9 +9,9 @@ import { MdOutlineWatchLater, MdSubscriptions } from "react-icons/md"
 export default function Main() {
   return (
     <section>
-      <div className="max-w-screen-xl mx-auto py-3">
+      <div className="max-w-screen-xl mx-auto md:p-2 p-3">
         <div className="grid grid-cols-12 gap-3">
-          <div className="md:col-span-3 col-span-12 h-screen sticky top-1 overflow-y-auto socrollabar">
+          <div className="md:col-span-3 md:block hidden col-span-12 h-screen sticky top-1 overflow-y-auto socrollabar">
             <p className=" mb-4 text-lg font-bold">Explore</p>
             <div className="flex space-x-3 mb-3">
               <FaHome size={25} />
