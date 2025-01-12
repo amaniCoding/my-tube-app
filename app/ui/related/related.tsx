@@ -1,5 +1,6 @@
 'use client'
 import Image from "next/image"
+import Link from "next/link"
 import { IoMdMore } from "react-icons/io"
 export default function Related() {
   return (
@@ -10,14 +11,16 @@ export default function Related() {
 
             <div className="grid grid-cols-12 gap-5 mb-5" key={i}>
               <div className="md:col-span-5 col-span-12">
-              <Image
+                <Link href={`/watch/2349873`}>
+                  <Image
                     src={`/latest/${i + 1}.jpg`}
                     width={0}
                     height={0}
                     sizes="100vh"
-                    className="w-full h-full  object-cover block"
+                    className="w-full h-full object-center"
                     alt="You tube like app developed by Amanuel Ferede"
                   />
+                </Link>
               </div>
               <div className="md:col-span-7 col-span-12">
                 <div className="flex">
