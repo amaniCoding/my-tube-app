@@ -1,11 +1,12 @@
 'use client'
 import Image from "next/image"
 import Link from "next/link"
+import { IoMdMore } from "react-icons/io"
 export default function WatchList() {
   return (
     <>
       {
-        Array.from(Array(14).keys()).map((_, i) => {
+        Array.from(Array(10).keys()).map((_, i) => {
           return (
             <div className="p-1" key={i}>
               <div>
@@ -33,6 +34,7 @@ export default function WatchList() {
                   />
 
                   <span className="w-full">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                  <IoMdMore size={40}/>
                 </div>
                 <p className="font-bold text-gray-700">Amani Tube</p>
                 <div className="flex space-x-1">
