@@ -14,7 +14,7 @@ export default function Subs() {
                   width={0}
                   height={0}
                   sizes="100vh"
-                  className="w-6 h-6  object-center block rounded-full"
+                  className="w-7 h-7 block rounded-full"
                   alt="You tube like app developed by Amanuel Ferede"
                 />
 
