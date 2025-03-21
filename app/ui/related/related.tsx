@@ -8,7 +8,7 @@ export default function Related() {
       {
         dummyText.map((el, i) => {
           return (
-            <Link href={`/watch/2349873`}>
+            <Link href={`/watch/2349873`} key={i}>
               <div className="grid grid-cols-12 mb-3 gap-3" key={i}>
                 <div className="md:col-span-5 col-span-12 relative">
 
