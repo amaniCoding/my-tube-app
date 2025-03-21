@@ -21,8 +21,12 @@ body {
 }
 
 @layer utilities {
+
+  .parent:has(.child:focus) {
+    @apply border-gray-300 rounded-3xl
+  }
   .socrollabar::-webkit-scrollbar {
-    width: 0px;
+    width: 7px;
   }
 
   /* Track */
@@ -33,11 +37,36 @@ body {
   /* Handle */
   .socrollabar::-webkit-scrollbar-thumb {
     background: #888;
-    border-radius: 0px;
+    border-radius: 20px;
   }
 
   /* Handle on hover */
   .socrollabar::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+
+
+  /** hidden scroll */
+
+  .socrollabar-hidden::-webkit-scrollbar {
+    width: 0;
+  }
+
+  /* Track */
+  .socrollabar-hidden::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  .socrollabar-hidden::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 20px;
+  }
+
+  /* Handle on hover */
+  .socrollabar-hidden::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  
 }
