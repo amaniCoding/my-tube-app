@@ -14,7 +14,7 @@ export default function Comment() {
                 width={0}
                 height={0}
                 sizes="100vh"
-                className="w-9 h-9 block rounded-full"
+                className="w-9 h-9 block object-cover rounded-full"
                 alt="You tube like app developed by Amanuel Ferede"
               />
               <div className="flex flex-col space-y-2">
@@ -37,7 +37,9 @@ export default function Comment() {
                 </div>
                 <div className="ml-5 my-5">
                     <div className="flex items-center space-x-3">
-                      <MdOutlineKeyboardArrowDown />
+                      {
+                        el.reply === 'no' ? null : <MdOutlineKeyboardArrowDown />
+                      }
                       <Image
                         src={`/tube/${i+1}.jpg`}
                         width={0}
@@ -46,7 +48,7 @@ export default function Comment() {
                         className={`w-6 h-6  object-center rounded-full ${el.hasOwnerReply ? 'block' : 'hidden'}`}
                         alt="You tube like app developed by Amanuel Ferede"
                       />
-                      <span><span className="text-blue-600 font-semibold">{el.reply} reply{el.reply === '1' ? '': 's'}</span></span>
+                      <span><span className="text-blue-600 font-semibold">{el.reply === '1' ? `${el.reply} reply` : el.reply === 'no' ? '' : `${el.reply} replys`}</span></span>
                     </div>
                   </div>
               </div>
@@ -61,7 +63,7 @@ export default function Comment() {
 
 const dummyText = [
   {
-    comment: 'Is at purse tried jokes china ready decay an. Small its shy way had woody downs power.',
+    comment: 'Everyone who is reading this you’re beautiful, and never give up your dreams, you are in this world for a reason!💖💖💖',
     name: 'Most Piano',
     views: '100',
     time: '1 minute ago',
@@ -70,7 +72,7 @@ const dummyText = [
 
   },
   {
-    comment: 'Two assure edward whence the was. Who worthy yet ten boy denote wonder. ',
+    comment: "Don't know if someone is reading this, but if you are: it doesn't matter where you are right now on this planet, I wish you a wonderful day and a happy, peaceful life where all your dreams come true. You are amazing and beautiful! I believe in you! ",
     name: 'CBC News',
     views: '234',
     time: '1 minute ago',
@@ -78,7 +80,7 @@ const dummyText = [
     hasOwnerReply: false,
 
   }, {
-    comment: 'Passage its ten led hearted removal cordial. Preference any astonished unreserved mrs.',
+    comment: "I've heard it a lot of times, but it's a magic version that can't be missed Anyone who listens please give me a thumbs up",
     name: 'Anchor Media',
     views: '25',
     time: '2 days ago',
@@ -86,7 +88,7 @@ const dummyText = [
     hasOwnerReply: true,
 
   }, {
-    comment: 'Is branched in my up strictly remember. Songs but chief has ham widow downs.',
+    comment: 'Hey you. Yes you.random person that I will never meet. I truely hope that you will find happiness in life. Today is going to be a great day.',
     name: 'Negash Media',
     views: '333k',
     time: '2 hours ago',
@@ -94,7 +96,7 @@ const dummyText = [
     hasOwnerReply: false,
 
   }, {
-    comment: 'Indulgence announcing uncommonly met she continuing two unpleasing terminated.',
+    comment: 'JESUS IS COMING!!!  A confirmation this morning from the Holy Spirit this morning. Hallelujah! Thank you Jesus! This was the very scripture was given in our study last evening and among others, including the message.  Bless you Pastor. Jesus is Coming!!!',
     name: 'Seyifu On Ebs',
     views: '294',
     time: '10 hours ago',
@@ -102,7 +104,7 @@ const dummyText = [
     hasOwnerReply: true,
 
   }, {
-    comment: 'Smile spoke total few great had never their too. Amongst moments do in arrived at my replied.',
+    comment: "To anybody who's reading this, I pray that whatever is hurting you or whatever you are constantly stressing about gets better. May the dark thoughts, the overthinking, and the doubt exit your mind. May clarity replace confusion. May peace and calmness fill your life. 🙏",
     name: 'Donkey Tube',
     views: '72k',
     time: '22 hours ago',
@@ -110,7 +112,7 @@ const dummyText = [
     hasOwnerReply: false,
 
   }, {
-    comment: 'Exquisite cordially mr happiness of neglected distrusts. Boisterous impossible unaffected he me everything.',
+    comment: "Hey you. Yes, you. You're probably scrolling through the comments, like I am, reading all these motivational comments. If you are reading this at night, you should get some sleep, and don't stress about everything going on in the world, or what you are going through. Don't dwell on things from the past, don't stress on your future. Just live your life, because you only get one. Do whatever makes you happy, not what other people want from you. For me, I'm gonna wake up tomorrow morning, get some exercise, and cherish life for the amazing blessing that it is. I hope you do the same and have an amazing day as well!",
     name: 'Chiristian Story',
     views: '264',
     time: '12 hours ago',
@@ -118,7 +120,7 @@ const dummyText = [
     hasOwnerReply: false,
 
   }, {
-    comment: 'On insensible possession oh particular attachment at excellence in. The books arose but miles happy she. ',
+    comment: 'To the person reading this, Good Luck! Stop stressing, everything will be okay. No matter what hardships you are facing right now, you can and will make it through it! ',
     name: 'Bible World',
     views: '75k',
     time: '19 hours ago',
@@ -126,7 +128,7 @@ const dummyText = [
     hasOwnerReply: false,
 
   }, {
-    comment: 'Saw yet kindness too replying whatever marianne. Old sentiments resolution admiration unaffected its mrs literature.',
+    comment: "If you are reading this, I want to tell you that everything will be fine. You are incredible, you are unique, you can face anything in your life, you have the strength within yourself to overcome any obstacle, loss or situation. You are not alone, you are loved, you have the right to feel bad and good, you have the right to feel. Be blessed by these positive vibes and live your life to the fullest. I'm sending my love to the universe",
     name: 'CNN',
     views: '157k',
     time: '2 hours ago',
@@ -135,7 +137,7 @@ const dummyText = [
 
   },
   {
-    comment: 'Pianoforte solicitude so decisively unpleasing conviction is partiality he. Or particular so diminution entreaties oh do.',
+    comment: "To all of the person reading this,  i'd like you to all know that someones always here for you.. no matter how hard it is, God is always there for us.. Be strong everyone and keep your faith with God.. love one another...🙏❤",
     name: 'Fana Meznagna',
     views: '242',
     time: '21 hours ago',
@@ -143,7 +145,7 @@ const dummyText = [
     hasOwnerReply: false,
 
   }, {
-    comment: 'Subjects to ecstatic children he. Could ye leave up as built match. Dejection agreeable attention set suspected led offending.',
+    comment: "I am a covid 19 patient...but I have 100 percent trust in God that I will be healed. In jesus' name, all of the people suffering this sickness will be healed. And all other people suffering from all kinds of sickness and pain will be healed too.  God has always been sending angels to us. Keep hoping, keep praying, keep listening to beautiful things and let go of the negativity. Keep safe everyone. Thank you for this wonderful video. I love it.",
     name: 'Ruha Tube',
     views: '78k',
     time: '22 hours ago',
@@ -162,26 +164,26 @@ const dummyText = [
     name: 'Amani Coding',
     views: '34',
     time: '2 days ago',
-    reply: '',
+    reply: 'no',
     hasOwnerReply: false,
   }, {
-    comment: 'IHim boisterous invitation dispatched had connection inhabiting projection. By mutual an mr danger garret edward an.',
+    comment: 'To the person reading this, Good Luck! Stop stressing, everything will be okay. No matter what hardships you are facing right now, you can and will make it through it!🥰😊🌹',
     name: 'Top Tube',
     views: '19',
     time: '2 years ago',
-    reply: '',
+    reply: 'no',
     hasOwnerReply: false,
 
   }, {
-    comment: 'Insipidity the sufficient discretion imprudence resolution sir him decisively. Proceed how any engaged visitor.',
+    comment: 'God is merciful....His amazing grace be with all of us..........🙏🙏🙏🙏🙏',
     name: 'Movies World',
     views: '50',
     time: '2 days ago',
-    reply: '',
+    reply: 'no',
     hasOwnerReply: false,
 
   }, {
-    comment: 'Betrayed cheerful declared end and. Questions we additions is extremely incommode. Next half add call them eat face.',
+    comment: 'To the person reading this, Good Luck! Stop stressing, everything will be okay. No matter what hardships you are facing right now, you can and will make it through it!🥰😊🌹',
     name: 'Sala Relax Music',
     views: '52',
     time: '1 hour ago',
@@ -193,11 +195,11 @@ const dummyText = [
     name: 'The Shark Band',
     views: '82',
     time: '12 days ago',
-    reply: '',
+    reply: 'no',
     hasOwnerReply: false,
 
   }, {
-    comment: 'Literature admiration frequently indulgence announcing are who you her. Was least quick after six. ',
+    comment: 'Magical music.... Create wonderful and positive energy... God bless u all listener a beautiful life❤.. ',
     name: 'Funny Moments',
     views: '26',
     time: '22 days ago',
@@ -205,27 +207,27 @@ const dummyText = [
     hasOwnerReply: false,
 
   }, {
-    comment: 'Fulfilled direction use continual set him propriety continued. Saw met applauded favourite deficient engrossed concealed and her.',
+    comment: 'Never ignore a person who loves you, cares for you, misses you. Because one day, you might wake up from your sleep and realize that you lost the moon while counting the stars 👍👍',
     name: 'Divine Music',
     views: '37',
     time: '9 years ago',
-    reply: '',
+    reply: 'no',
 
 
   }, {
-    comment: 'Do commanded an shameless we disposing do. Indulgence ten remarkably nor are impression out. ',
+    comment: 'This sound is so wonderful. The person who is reading this comment , i wish you great success , health, love and happiness ! ',
     name: 'Tana Entertainment',
     views: '27',
     time: '2 minutes ago',
-    reply: '',
+    reply: 'no',
     hasOwnerReply: false,
 
   }, {
-    comment: 'Oh to talking improve produce in limited offices fifteen an. Wicket branch to answer do we. Place are decay men hours tiled.',
+    comment: 'Whoever is reading this comment, I wish you success, health, love and happiness!',
     name: 'Mr Bean',
     views: '82',
     time: '2 days ago',
-    reply: '',
+    reply: 'no',
     hasOwnerReply: false,
   },
 

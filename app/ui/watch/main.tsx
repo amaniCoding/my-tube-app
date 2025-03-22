@@ -27,14 +27,14 @@ export default function Watch() {
             
                 <p className="text-xl font-bold">Ultimate Ambient Chillout: Relax, Work, Study ✨ Unwind Your Mind ✨ Lounge Vibes for Relaxation.</p>
           
-              <div className="flex px-3 py-2 my-2 justify-between">
+              <div className="flex px-3 py-2 my-2 justify-between flex-wrap">
                 <div className="flex space-x-2 ">
                   <Image
-                    src={`/latest/6.jpg`}
+                    src={`/tube/46.jpg`}
                     width={0}
                     height={0}
                     sizes="100vh"
-                    className="w-10 h-10 object-center rounded-full flex-none"
+                    className="w-10 h-10 object-cover rounded-full flex-none"
                     alt="You tube like app developed by Amanuel Ferede"
                   />
                   <div className="flex flex-col">
@@ -45,7 +45,7 @@ export default function Watch() {
 
                 </div>
 
-                <div className="flex space-x-4 h-10 ">
+                <div className="flex space-x-4 h-10 md:mt-0 mt-4">
 
                   <div className="flex items-center space-x-3 rounded-3xl py-1.5 px-4 bg-gray-200">
                     <div className="flex items-center space-x-1 ">
@@ -64,7 +64,7 @@ export default function Watch() {
                   <button className="px-3 h-10  bg-gray-200  rounded-3xl text-black"><span className="flex items-center space-x-1"><PiShareFat size={25} /><span>Share</span></span></button>
                   <button className="px-3 h-10 bg-gray-200  rounded-3xl text-black">Download</button>
 
-                  <AiOutlineMore className=" rounded-full flex-none p-2" size={25} />
+                  <AiOutlineMore className=" rounded-full flex-none p-2 bg-gray-200" size={42} />
 
                 </div>
 
@@ -80,11 +80,11 @@ export default function Watch() {
               </div>
               <div className="flex items-center space-x-3 my-2">
                 <Image
-                  src={`/latest/7.jpg`}
+                  src={`/tube/7.jpg`}
                   width={0}
                   height={0}
                   sizes="100vh"
-                  className="w-10 h-10  object-center block rounded-full"
+                  className="w-9 h-9  object-center block rounded-full"
                   alt="You tube like app developed by Amanuel Ferede"
                 />
                 <input className="block w-full p-3 border-b-2 border-gray-300 focus:border-b-2 focus:outline-none focus:border-b-black" placeholder="Write a comment "></input>
