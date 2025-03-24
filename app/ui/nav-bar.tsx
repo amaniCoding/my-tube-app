@@ -31,13 +31,13 @@ export default function NavBar() {
           </div>
           <div className="flex items-center space-x-3">
             <HiMiniMagnifyingGlass className="md:hidden block" size={65} />
-            <div className="flex space-x items-center py-1 px-3 bg-gray-100 rounded-3xl">
+            <div className="md:flex hidden space-x items-center py-1 px-3 bg-gray-100 rounded-3xl">
               <GoPlus size={27} />
               <span className="font-semibold">Create</span>
             </div>
 
 
-            <div className="relative">
+            <div className="relative md:block hidden">
               <IoIosNotificationsOutline size={30} />
               <div className="absolute -top-1.5 -right-2 rounded-full text-sm bg-red-600 flex items-center justify-between text-white px-1">21</div>
             </div>

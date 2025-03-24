@@ -13,7 +13,7 @@ export default function Main() {
 
   return (
     <section>
-      <div className="max-w-screen-2xl mx-auto md:p-3 p-1 md:pt-0 pt-0 mt-[70px]">
+      <div className="max-w-screen-2xl mx-auto md:p-3 p-0 mt-[70px]">
         <div className="flex w-full ">
           <div className={`mt-16 w-[18%] md:block pt-[70px]  hidden h-screen fixed left-0 bottom-0 overflow-y-scroll ${showScrollBar ? 'socrollabar' : 'socrollabar-hidden'}`} onMouseOver={() => setShowScrollBar(true)} onMouseOut={() => { setShowScrollBar(false) }}>
             <div className="border-b border-b-gray-300 py-3">
@@ -72,7 +72,7 @@ export default function Main() {
             </div>
           </div>
           <div className="md:w-[82%] w-full md:ml-[18%] ml-0">
-            <div className="grid md:grid-cols-3 grid-cols-1 gap-2 md:p-4 p-0 md:pt-1 pt-1">
+            <div className="grid md:grid-cols-3 grid-cols-1 md:gap-6 gap-0 md:p-4 p-0">
               <WatchList />
             </div>
           </div>

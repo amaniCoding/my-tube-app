@@ -17,25 +17,34 @@ export default function Related() {
                     width={0}
                     height={0}
                     sizes="100vh"
-                    className="w-full block rounded-lg group-hover:brightness-75 group-hover:rounded-none transition-all duration-200 ease-in-out"
+                    className="w-full block md:rounded-lg group-hover:brightness-75 group-hover:rounded-none transition-all duration-200 ease-in-out"
                     alt="You tube like app developed by Amanuel Ferede"
                   />
-                  <span className="bg-black/55 rounded-md text-sm text-white absolute right-1 bottom-7 py-[0.5px] px-1">{el.duration}</span>
+                  <span className="bg-black/55 rounded-md text-sm text-white absolute right-2 md:bottom-10 bottom-8 py-[0.5px] px-1">{el.duration}</span>
 
                 </div>
                 <div className="md:col-span-7 col-span-12">
-                  <div className="flex w-full space-x-2 ">
-                    <div className="flex flex-col w-full">
-                      <p className="font-semibold w-full">{el.title.substring(0, 50)}...</p>
+                  <div className="flex space-x-2 my-2 md:pl-0 pl-4">
 
-                      <p className="w-full" style={{ color: '#626262' }}>{el.channel}</p>
+                    <Image
+                      src={`/tube/${61 - (i + 1)}.jpg`}
+                      width={0}
+                      height={0}
+                      sizes="100vh"
+                      className=" w-8 h-8 rounded-full md:hidden block"
+                      alt="You tube like app developed by Amanuel Ferede"
+                    />
 
+                    <div className="w-full group">
+                      <p className="font-semibold ">{el.title.substring(0, 50)}...</p>
+                      <p className="md:text-sm" style={{ color: '#626262' }}>{el.channel}</p>
                       <div className="flex" style={{ color: '#777777' }}>
-                        <p className="text-sm">{el.views} views .</p>
-                        <p className="text-sm">{el.time} ago</p>
+                        <p className="md:text-sm">{el.views} views .</p>
+                        <p className="md:text-sm text-nowrap">{el.time}</p>
                       </div>
                     </div>
-                    <AiOutlineMore className=" rounded-full flex-none p-2" size={35} />
+                    <AiOutlineMore className=" rounded-full flex-none p-2" size={42} />
+
                   </div>
                 </div>
               </div>
@@ -415,7 +424,9 @@ const dummyText = [
     title: 'Oh to talking improve produce in limited offices fifteen an. Wicket branch to answer do we. Place are decay men hours tiled.',
     channel: 'Mr Bean',
     views: '96k',
-    time: '2 days ago'
+    time: '2 days ago',
+    duration: '5:55'
+
   },
 
 ]

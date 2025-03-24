@@ -8,7 +8,7 @@ export default function WatchList() {
       {
         dummyText.map((el, i) => {
           return (
-            <div className="p-1 group " key={i} >
+            <div className="group " key={i} >
 
               <Link href={`/watch/2349873`}>
                 <div className="relative">
@@ -17,7 +17,7 @@ export default function WatchList() {
                     width={0}
                     height={0}
                     sizes="100vh"
-                    className="w-full block relative rounded-xl group-hover:brightness-75 group-hover:rounded-none transition-all duration-200 ease-in-out"
+                    className="w-full block relative md:rounded-xl group-hover:brightness-75 md:group-hover:rounded-none transition-all duration-200 ease-in-out"
                     alt="You tube like app developed by Amanuel Ferede"
                   />
                   <span className="bg-black/55 rounded-md text-sm text-white absolute right-2 bottom-2 py-[0.5px] px-1">{el.duration}</span>
@@ -26,7 +26,7 @@ export default function WatchList() {
 
 
                 <div>
-                  <div className="flex space-x-2 my-2">
+                  <div className="flex space-x-2 my-2 md:pl-0 pl-4">
 
                     <Image
                       src={`/tube/${61 - (i + 1)}.jpg`}
@@ -38,11 +38,11 @@ export default function WatchList() {
                     />
 
                     <div className="w-full group">
-                      <p className="font-semibold text-balance">{el.title.substring(0, 50)}...</p>
+                      <p className="font-semibold text-balance ">{el.title.substring(0, 50)}...</p>
                       <p className="" style={{ color: '#626262' }}>{el.channel}</p>
-                      <div className="flex" style={{ color: '#777777' }}>
+                      <div className="flex " style={{ color: '#777777' }}>
                         <p className="">{el.views} views .</p>
-                        <p>{el.time} ago</p>
+                        <p>{el.time}</p>
                       </div>
                     </div>
                     <AiOutlineMore className=" rounded-full flex-none p-2" size={42} />
