@@ -12,6 +12,7 @@ export default function WatchList() {
 
               <Link href={`/watch/2349873`}>
                 <div className="relative">
+
                   <Image
                     src={`/tube/${i + 1}.jpg`}
                     width={0}
@@ -23,34 +24,36 @@ export default function WatchList() {
                   <span className="bg-black/55 rounded-md text-sm text-white absolute right-2 bottom-2 py-[0.5px] px-1">{el.duration}</span>
 
                 </div>
-
-
-                <div>
-                  <div className="flex space-x-2 my-2 md:pl-0 pl-4">
-
-                    <Image
-                      src={`/tube/${61 - (i + 1)}.jpg`}
-                      width={0}
-                      height={0}
-                      sizes="100vh"
-                      className="w-8 h-8 rounded-full flex-none flx"
-                      alt="You tube like app developed by Amanuel Ferede"
-                    />
-
-                    <div className="w-full group">
-                      <p className="font-semibold text-balance ">{el.title.substring(0, 50)}...</p>
-                      <p className="" style={{ color: '#626262' }}>{el.channel}</p>
-                      <div className="flex " style={{ color: '#777777' }}>
-                        <p className="">{el.views} views .</p>
-                        <p>{el.time}</p>
-                      </div>
-                    </div>
-                    <AiOutlineMore className=" rounded-full flex-none p-2" size={42} />
-
-                  </div>
-
-                </div>
               </Link>
+
+
+
+              <div className="flex space-x-2 my-2 md:pl-0 pl-4 ">
+
+                <Image
+                  src={`/tube/${62 - (i + 1)}.jpg`}
+                  width={0}
+                  height={0}
+                  sizes="100vh"
+                  className="w-8 h-8 rounded-full flex-none"
+                  alt="You tube like app developed by Amanuel Ferede"
+                />
+                <Link href={`/watch/2349873`}>
+                  <div className="w-full group">
+                    <p className="font-semibold text-balance ">{el.title.substring(0, 50)}...</p>
+                    <p className="" style={{ color: '#626262' }}>{el.channel}</p>
+                    <div className="flex " style={{ color: '#777777' }}>
+                      <p className="">{el.views} views .</p>
+                      <p>{el.time}</p>
+                    </div>
+                  </div>
+                </Link>
+                <AiOutlineMore className=" rounded-full cursor-pointer flex-none p-2 active:bg-gray-200" size={42} />
+
+              </div>
+
+
+
             </div>
           )
         })

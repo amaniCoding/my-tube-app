@@ -9,7 +9,7 @@ import { BsCollectionPlayFill } from "react-icons/bs"
 import Link from "next/link"
 export default function NavBar() {
   return (
-    <nav className=" fixed top-0 left-0 right-0 bg-white z-10 px-4">
+    <nav className=" fixed top-0 left-0 right-0 bg-white z-10 md:px-4 px-1">
       <div className="max-w-screen-2xl mx-auto p-3">
         <div className="flex items-center justify-between space-x-3">
           <div className="flex space-x-3 items-center">
@@ -30,7 +30,7 @@ export default function NavBar() {
 
           </div>
           <div className="flex items-center space-x-3">
-            <HiMiniMagnifyingGlass className="md:hidden block" size={65} />
+            <HiMiniMagnifyingGlass className="md:hidden block" size={70} />
             <div className="md:flex hidden space-x items-center py-1 px-3 bg-gray-100 rounded-3xl">
               <GoPlus size={27} />
               <span className="font-semibold">Create</span>

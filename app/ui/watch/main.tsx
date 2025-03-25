@@ -12,7 +12,7 @@ export default function Watch() {
       <div className="max-w-[1300px] mt-[70px] mx-auto md:p-2 p-0">
 
         <div className="grid grid-cols-12 gap-5">
-          <div className="md:col-span-8 col-span-12">
+          <div className="lg:col-span-8 col-span-12">
       
               <div className="p-1">
                 <Image
@@ -42,7 +42,7 @@ export default function Watch() {
                     <p>174K subscribers</p>
                   </div>
                   <button className="px-4 py-1.5 h-10  bg-black text-white rounded-3xl">Subscribe</button>
-                  <AiOutlineMore className="md:hidden block rounded-full flex-none p-2 bg-gray-200" size={42} />
+                  <AiOutlineMore className="md:hidden block rounded-full flex-none p-2 active:bg-gray-200" size={42} />
 
                 </div>
 
@@ -79,7 +79,7 @@ export default function Watch() {
                 <span className="font-bold text-lg">152 Comments</span>
                 <MdSort size={30} />
               </div>
-              <div className="flex items-center space-x-3 my-2">
+              <div className="flex items-center space-x-3 my-2 md:px-0 px-2">
                 <Image
                   src={`/tube/7.jpg`}
                   width={0}
@@ -95,7 +95,7 @@ export default function Watch() {
               </div>
 
           </div>
-          <div className="md:col-span-4 col-span-12">
+          <div className="lg:col-span-4 col-span-12">
             <Related />
           </div>
         </div>
